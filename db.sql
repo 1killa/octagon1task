@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS ChatBotTests
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+USE ChatBotTests;
+
+CREATE TABLE IF NOT EXISTS Items (
+  id   INT          NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  `desc` TEXT       NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
